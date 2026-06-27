@@ -10,4 +10,8 @@ void caesarCipher(char *string, size_t len, int shift);
 char forLower(char c, int shift);
 char forUpper(char c, int shift);
 
+void decodeCaesar(char *string, size_t len, int shift);
+char de_forLower(char c, int shift);
+char de_forUpper(char c, int shift);
+
 #endif

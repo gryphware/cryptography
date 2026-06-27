@@ -9,12 +9,13 @@ int main(){
   char someText[] = "hello?";
   size_t len = strlen(someText);
   int shift = 6;
-
   printf("before: %s\n", someText);
 
   caesarCipher(someText, len, shift);
-
   printf("after: %s\n", someText);
+
+  decodeCaesar(someText, len, shift);
+  printf("after decode: %s\n", someText);
 
   return EXIT_SUCCESS;
 }
